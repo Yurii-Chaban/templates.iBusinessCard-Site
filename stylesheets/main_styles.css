@@ -2371,36 +2371,249 @@ footer .copyright .copyright-sign a:hover {
     color: white;
     font: 400 15px/20px "Swiss721BT", sans-serif;
   }
+
+  /* line 1769, ../sass/_media.scss */
+  .contact-page {
+    border-bottom: 5px solid #b36704;
+  }
+  /* line 1771, ../sass/_media.scss */
+  .contact-page .poster-section {
+    height: 681px;
+  }
+  /* line 1773, ../sass/_media.scss */
+  .contact-page .poster-section .under-rgba-layer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  /* line 1783, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content {
+    position: relative;
+    z-index: 2;
+    margin: 250px auto 0;
+  }
+  /* line 1788, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info,
+  .contact-page .poster-section .contact-content .feedback-form {
+    overflow: hidden;
+  }
+  /* line 1791, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info .contact-title,
+  .contact-page .poster-section .contact-content .contact-info .form-title,
+  .contact-page .poster-section .contact-content .feedback-form .contact-title,
+  .contact-page .poster-section .contact-content .feedback-form .form-title {
+    margin: 0 12px 25px 0;
+    color: white;
+    font: 400 28px/30px "Swiss721BT", sans-serif;
+  }
+  /* line 1799, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info {
+    float: left;
+    margin-left: 36px;
+  }
+  /* line 1803, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info .contact-info-list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 1808, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info .contact-info-list li {
+    display: block;
+    margin: 0 0 10px;
+    text-align: left;
+  }
+  /* line 1813, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info .contact-info-list li .title {
+    margin: 0 0 10px 0;
+    color: #e17f00;
+    font: 400 20px/22px "Swiss721BT", sans-serif;
+  }
+  /* line 1820, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .contact-info .contact-info-list li .content span,
+  .contact-page .poster-section .contact-content .contact-info .contact-info-list li .content a {
+    display: block;
+    color: white;
+    font: 400 18px/20px "Swiss721BT", sans-serif;
+  }
+  /* line 1831, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .feedback-form {
+    float: right;
+    max-width: 536px;
+  }
+  /* line 1834, ../sass/_media.scss */
+  .contact-page .poster-section .contact-content .feedback-form .form-title {
+    float: right;
+    margin-right: 0;
+  }
+  /* line 1841, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper {
+    overflow: hidden;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    min-height: 322px;
+    padding: 13px 0 25px 0;
+    background: url("../images/quate-form-border.png") no-repeat;
+    background-size: contain;
+  }
+  /* line 1851, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper #quote-form {
+    max-width: 469px;
+    margin: 0 0 0 20px;
+  }
+  /* line 1856, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row {
+    overflow: hidden;
+  }
+  /* line 1858, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row label,
+  .contact-page .poster-section .form-wrapper .row .services-label {
+    display: block;
+    margin: 0 0 3px 10px;
+    color: white;
+    font: 400 12px/14px "Swiss721BT", sans-serif;
+  }
+  /* line 1866, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row #first-name,
+  .contact-page .poster-section .form-wrapper .row #number,
+  .contact-page .poster-section .form-wrapper .row #email,
+  .contact-page .poster-section .form-wrapper .row #select-services,
+  .contact-page .poster-section .form-wrapper .row #message {
+    background: #fff;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #000;
+    font: 400 14px/19px "Swiss721BT", sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 1880, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row #message {
+    width: 100%;
+    height: 88px;
+  }
+  /* line 1885, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row #first-name,
+  .contact-page .poster-section .form-wrapper .row #number,
+  .contact-page .poster-section .form-wrapper .row #email {
+    padding: 0 0 0 10px;
+  }
+  /* line 1891, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row #first-name,
+  .contact-page .poster-section .form-wrapper .row #number,
+  .contact-page .poster-section .form-wrapper .row #email,
+  .contact-page .poster-section .form-wrapper .row #select-services {
+    display: block;
+    width: 100%;
+    height: 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 1901, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .row #select-services {
+    color: #ffa200;
+    padding-left: 10px;
+  }
+  /* line 1907, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .first-name,
+  .contact-page .poster-section .form-wrapper .email,
+  .contact-page .poster-section .form-wrapper .number,
+  .contact-page .poster-section .form-wrapper .selection-block {
+    margin: 0 0 7px;
+  }
+  /* line 1914, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .first-name,
+  .contact-page .poster-section .form-wrapper .email {
+    width: 220px;
+    float: left;
+    clear: left;
+  }
+  /* line 1921, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .number,
+  .contact-page .poster-section .form-wrapper .selection-block {
+    width: 220px;
+    float: right;
+    clear: right;
+  }
+  /* line 1929, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .selection-block label {
+    margin: 0;
+    position: relative;
+  }
+  /* line 1933, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .selection-block label:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 20px;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+  }
+  /* line 1946, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper .message {
+    clear: both;
+  }
+  /* line 1950, ../sass/_media.scss */
+  .contact-page .poster-section .form-wrapper #quote-sbm-btn {
+    float: right;
+    margin: 5px 6px 0 0;
+    color: #ffa200;
+    font: 400 14px/16px "Swiss721BT", sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* line 1965, ../sass/_media.scss */
+  .contact-map-page .prefooter .social-block {
+    float: right;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 1778, ../sass/_media.scss */
+  /* line 1979, ../sass/_media.scss */
   header .main-menu .list-menu li {
     padding: 9px 0 3px;
   }
 
-  /* line 1785, ../sass/_media.scss */
+  /* line 1986, ../sass/_media.scss */
   .like-slider-page .poster-section {
     height: 1099px;
   }
-  /* line 1787, ../sass/_media.scss */
+  /* line 1988, ../sass/_media.scss */
   .like-slider-page .poster-section .bottom-text {
     padding: 20px 0 65px 49px;
   }
-  /* line 1790, ../sass/_media.scss */
+  /* line 1991, ../sass/_media.scss */
   .like-slider-page .poster-section .bottom-text .bottom-text-title {
     margin: 0 0 25px;
   }
-  /* line 1793, ../sass/_media.scss */
+  /* line 1994, ../sass/_media.scss */
   .like-slider-page .poster-section .bottom-text .bottom-text-content {
     margin: 0 0 10px 0;
   }
 
-  /* line 1801, ../sass/_media.scss */
+  /* line 2002, ../sass/_media.scss */
   .services-poster .poster-section {
     height: 976px;
   }
 
-  /* line 1806, ../sass/_media.scss */
+  /* line 2007, ../sass/_media.scss */
   .blog-tegs .tegs-list {
     width: 100%;
     overflow: hidden;
@@ -2408,18 +2621,18 @@ footer .copyright .copyright-sign a:hover {
     padding: 10px 0 25px 39px;
     background-position: right top !important;
   }
-  /* line 1813, ../sass/_media.scss */
+  /* line 2014, ../sass/_media.scss */
   .blog-tegs .tegs-list .rotate-title {
     top: 19%;
     right: -13px;
   }
-  /* line 1818, ../sass/_media.scss */
+  /* line 2019, ../sass/_media.scss */
   .blog-tegs .tegs-list .tegs-title {
     overflow: hidden;
     margin: -6px 0 0 0;
   }
 
-  /* line 1829, ../sass/_media.scss */
+  /* line 2030, ../sass/_media.scss */
   .quote-form-section .section-position-title {
     top: -28px;
     left: 15px;
@@ -2427,24 +2640,29 @@ footer .copyright .copyright-sign a:hover {
     height: 52px;
   }
 
-  /* line 1839, ../sass/_media.scss */
+  /* line 2040, ../sass/_media.scss */
   .map-section .section-position-title {
     top: -33px;
     left: 15px;
     height: 55px;
   }
 
-  /* line 1846, ../sass/_media.scss */
+  /* line 2047, ../sass/_media.scss */
   .blog-page .poster-section {
     height: 976px;
   }
+
+  /* line 2053, ../sass/_media.scss */
+  .contact-page .poster-section {
+    height: 681px;
+  }
 }
 @media (min-width: 1800px) {
-  /* line 1856, ../sass/_media.scss */
+  /* line 2063, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-button-next {
     right: 24%;
   }
-  /* line 1859, ../sass/_media.scss */
+  /* line 2066, ../sass/_media.scss */
   .page-slider .swiper-container-home-page .swiper-button-prev {
     left: 27%;
   }
