@@ -792,6 +792,166 @@
 		}
 	}
 
+	.services-poster {
+		.bottom-rgba {
+			width: 100%;
+			height: 61px;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.7);
+		}
+		.poster-section {
+			height: 976px;
+
+			.pisition-services-block {
+				margin: 185px 0 0 0;
+			}
+		}
+		.services-list {
+			padding-left: 14px;
+			li {
+				display: inline-block;
+				width: auto;
+				height: auto;
+				margin: 0 0 30px 0;
+
+				&:nth-child(4n+1) {
+					margin-left: 88px;
+					margin-right: 0;
+				}
+
+				&:nth-child(4n+2) {
+					margin: 15px 0 15px 30px;
+				}
+				&:nth-child(4n+3) {
+					margin: 15px 0 15px 80px;
+				}
+				&:nth-child(4n+4) {
+					margin: 15px 0 15px 50px;
+				}
+
+				.icon-wrapper {
+					width: auto;
+
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.services-icon-title {
+					margin: 12px auto 0;
+					color: #fff;
+					font: 400 28px / 30px $Swiss721BT;
+					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.24);
+
+					a {
+						color: #fff;
+						@include transition;
+					}
+				}
+
+				.icon-first,
+				.icon-second,
+				.icon-third,
+				.icon-fourth,
+				.icon-fifth,
+				.icon-sixth {
+					width: 157px;
+					height: 105px;
+					margin: 0 0 19px 0;
+					margin: 0 auto;
+					background-size: contain !important;
+					background-position: center !important;
+				}
+				.icon-first {
+					background: url("../images/1_1.png") no-repeat;
+					@include transition;
+
+					&:hover {
+						background: url("../images/1_2.png") no-repeat;
+					}
+				}
+				.icon-second {
+					background: url("../images/2_1.png") no-repeat;
+					@include transition;
+
+					&:hover {
+						background: url("../images/2_2.png") no-repeat;
+					}
+				}
+				.icon-third {
+					background: url("../images/3_1.png") no-repeat;
+					@include transition;
+
+					&:hover {
+						background: url("../images/3_2.png") no-repeat;
+					}
+				}
+				.icon-fourth {
+					background: url("../images/4_1.png") no-repeat;
+					@include transition;
+
+					&:hover {
+						background: url("../images/4_2.png") no-repeat;
+					}
+				}
+				.icon-fifth {
+					background: url("../images/5_1.png") no-repeat;
+					@include transition;
+
+					&:hover {
+						background: url("../images/5_2.png") no-repeat;
+					}
+				}
+
+				&:hover {
+					.icon-first {
+						background: url("../images/1_2.png") no-repeat;
+					}
+					.icon-second {
+						background: url("../images/2_2.png") no-repeat;
+					}
+					.icon-third {
+						background: url("../images/3_2.png") no-repeat;
+					}
+					.icon-fourth {
+						background: url("../images/4_2.png") no-repeat;
+					}
+					.icon-fifth {
+						background: url("../images/5_2.png") no-repeat;
+					}
+
+					.services-icon-title {
+						a {
+							color: #e17f00;
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.services-text {
+		@include site-container;
+		padding: 30px 0 50px;
+		border-top: 5px solid #b36704;
+		border-bottom: 5px solid #b36704;
+
+		.services-content-sign {
+			margin: 0 0 0 22px;
+			padding: 0 13px;
+			color: black;
+			font: 400 20px / 22px $Swiss721BT;
+			border-left: 2px solid #404040;
+			border-right: 2px solid #404040;
+		}
+	}
+
 	.services-section {
 		padding: 77px 0 66px;
 		overflow: initial;
@@ -1316,7 +1476,7 @@
 		}
 		.prefooter {
 			overflow: hidden;
-	    padding: 29px 0 42px;
+			padding: 29px 0 42px;
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -1506,6 +1666,12 @@
 			}
 		}
 	}
+
+	.services-poster {
+		.poster-section {
+			height: 976px;
+		}
+	}
 	.blog-tegs {
 		.tegs-list {
 			width: 100%;
@@ -1546,6 +1712,7 @@
 			height: 55px;
 		}
 	}
+
 // -----------------------------------------
 }
 @media (min-width: 1800px) {
