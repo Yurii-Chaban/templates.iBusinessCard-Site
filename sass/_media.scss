@@ -556,7 +556,7 @@
 			float: left;
 			width: 255px;
 			height: 63px;
-			margin: -39px auto 0;
+			margin: -34px auto 0;
 			background: url("../images/logo-bg.png") no-repeat;
 
 			.logo {
@@ -590,8 +590,8 @@
 				@include border-box;
 				li {
 					display: inline-block;
-					margin: 0 10px;
-					padding: 9px 0 8px;
+					margin: 0 0 0 44px;
+					padding: 7px 0 4px;
 
 					a {
 						font: 400 16px / 22px $Swiss721BT;
@@ -607,21 +607,25 @@
 		}
 
 		.desctop-info-block {
-			clear: both;
+			// clear: both;
 			display: block;
 			float: right;
-			margin: 0;
+			margin: 17px -6px 0 0;
 
 			.quote-btn {
 				display: block;
 				float: right;
-				margin: 0 13px 15px 0;
+				margin: 0 13px 11px 0;
 				text-align: center;
 				width: 143px;
 				height: 25px;
 				color: black;
 				font: 400 16px / 25px $Swiss721BT;
 				background: url('../images/quote-btn-bg.png');
+
+				span {
+					padding-left: 10px;
+				}
 			}
 
 			.header-phone {
@@ -664,20 +668,20 @@
 
 			.swiper-container-home-page {
 				position: absolute;
-				top: 300px;
+				top: 484px;
 				z-index: 2;
-				width: 865px;
+				width: 908px;
 				height: 145px;
 				.swiper-slide {
 					.position-content-block {
 						max-width: 525px;
 						width: 100%;
-						left: 50%;
+						left: 48%;
 						top: 0;
 						transform: translateX(-50%);
 
 						.content-title {
-							margin: 0 0 20px;
+							margin: 0 0 15px;
 							color: white;
 							font: 400 42px / 47px $Swiss721BT;
 						}
@@ -690,28 +694,32 @@
 				.swiper-button-next, .swiper-button-prev {
 					width: 33px;
 					height: 58px;
-					top: 30px;
+					top: 35px;
 					color: #fff;
 					background-image: none;
 				}
 				.swiper-button-next {
+					right: 11px;
 					background: url("../images/next.png") no-repeat;
 				}
 				.swiper-button-prev {
+					left: 34px;
 					background: url("../images/prev.png") no-repeat;
 				}
 			}
 			.more-block {
 				clear: both;
 				max-width: 695px;
-				width: 590px;
+				width: 100%;
 				height: auto;
 				overflow: hidden;
 				margin: 0 0 0 14px;
 				background: url("../images/more-block-bg.png");
 				position: relative;
 				z-index: 2;
-				padding-bottom: 20px;
+				top: 114px;
+				left: 14px;
+				padding-bottom: 17px;
 
 				.more-btn {
 					position: relative;
@@ -785,7 +793,7 @@
 	}
 
 	.services-section {
-		padding: 77px 0 76px;
+		padding: 77px 0 66px;
 		overflow: initial;
 		box-shadow: 0 0 16px rgba(0, 0, 0, 0.34);
 		border-top: 5px solid #b36704;
@@ -794,11 +802,11 @@
 
 		.section-position-title {
 			position: absolute;
-			top: -84px;
-			left: 0;
+			top: -105px;
+			left: 15px;
 			z-index: 2;
 			width: 206px;
-			height: 46px;
+			height: 53px;
 			background: url("../images/our-services-colore.png") no-repeat;
 
 			span {
@@ -817,7 +825,8 @@
 				margin: 0 23px;
 
 				&:first-child {
-					margin-left: 0;
+					margin-left: 40px;
+					margin-right: 0;
 				}
 
 				&:last-child {
@@ -835,7 +844,7 @@
 				}
 
 				.services-icon-title {
-					margin: 20px auto 0;
+					margin: 12px auto 0;
 					color: black;
 					font: 400 20px / 22px $Swiss721BT;
 
@@ -940,7 +949,7 @@
 
 	.stock-section {
 		padding: 0;
-		max-height: 480px;
+		max-height: 481px;
 		overflow: hidden;
 
 		.top-rgba,
@@ -957,6 +966,7 @@
 
 			.title {
 				margin: 10px 0 0;
+				padding: 3px 0 0 30px;
 				color: white;
 				font: 400 20px / 22px $Swiss721BT;
 			}
@@ -975,25 +985,28 @@
 
 			li {
 				display: inline-block;
-				max-width: 274px;
+				max-width: 262px;
 				width: 100%;
-				min-height: 165px;
-				margin: 0 30px;
-				padding: 20px 30px 20px 20px;
+				min-height: 154px;
+				padding: 15px 34px 20px 20px;
 				background: url("../images/advanteges-item-bg.png") no-repeat;
 				background-size: cover;
 				@include border-box; 
 
 				&:first-child {
-					margin-left: 0;
+					margin: 0 0 0 35px;
+				}
+
+				&:nth-child(2) {
+					margin: 0 0 0 35px;
 				}
 
 				&:last-child {
-					margin-right: 0;
+					margin: 0 0 0 40px;
 				}
 
 				.item-title {
-					margin: 0 auto 20px;
+					margin: 0 auto 13px;
 					color: white;
 					font: 400 20px / 22px $Swiss721BT;
 				}
@@ -1008,7 +1021,7 @@
 	}
 
 	.blog-tegs {
-		padding: 42px 0 31px;
+		padding: 42px 0 28px;
 		background: url("../images/cubics.png");
 		border-top: 5px solid #b36704;
 		border-bottom: 5px solid #b36704;
@@ -1017,7 +1030,21 @@
 			overflow: hidden;
 			padding: 49px 0 60px;
 			background: url("../images/layer-38.png") no-repeat;
-			background-position: right center;
+			background-position: right center !important;
+
+			.rotate-title {
+				position: absolute;
+				top: 29%;
+				right: 25px;
+				text-transform: uppercase;
+				color: black;
+				font: 400 19px / 22px $Swiss721BT;
+				-moz-transform: rotate(-65deg);
+				-ms-transform: rotate(-65deg);
+				-webkit-transform: rotate(-65deg);
+				-o-transform: rotate(-65deg);
+				transform: rotate(-65deg);
+			}
 
 			.tegs-title {
 				max-width: 807px;
@@ -1127,7 +1154,7 @@
 
 		.form-wrapper {
 			overflow: hidden;
-			margin: 150px auto 0;
+			margin: 145px 0 0 158px;
 			max-width: 597px;
 			width: 100%;
 			min-height: 322px;
@@ -1144,9 +1171,9 @@
 				label,
 				.services-label {
 					display: block;
-					margin: 0 0 5px 8px;
+					margin: 0 0 3px 10px;
 					color: white;
-					font: 400 18px / 22px $Swiss721BT;
+					font: 400 14px / 19px $Swiss721BT;
 				}
 
 				#first-name,
@@ -1159,13 +1186,13 @@
 					outline: none;
 					resize: none;
 					color: #000;
-					font: 400 18px / 22px $Swiss721BT;
+					font: 400 14px / 19px $Swiss721BT;
 					@include border-box;
 				}
 
 				#message {
 					width: 100%;
-					height: 95px;
+					height: 111px;
 				}
 
 				#first-name,
@@ -1179,8 +1206,9 @@
 				#email, 
 				#select-services {
 					display: block;
-					width: 264px;
-					height: 32px;
+					width: 100%;
+					height: 30px;
+					@include border-box;
 				}
 
 				#select-services {
@@ -1193,12 +1221,12 @@
 			.email,
 			.number,
 			.selection-block {
-				margin: 0 0 5px;
+				margin: 0 0 9px;
 			}
 
 			.first-name,
 			.email {
-				width: 264px;
+				width: 267px;
 				float: left;
 				clear: left;
 			} 
@@ -1234,7 +1262,7 @@
 
 			#quote-sbm-btn {
 				float: right;
-				margin: 8px 0 0;
+				margin: 6px 11px 0 0;
 				color: #ffa200;
 				font: 400 18px / 22px $Swiss721BT;
 				background: none;
@@ -1248,7 +1276,7 @@
 	.map-section {
 		position: relative;
 		display: block;
-		height: 639px;
+		height: 620px;
 
 		.section-position-title {
 			position: absolute;
@@ -1288,7 +1316,7 @@
 		}
 		.prefooter {
 			overflow: hidden;
-			padding: 33px 0 58px;
+	    padding: 29px 0 42px;
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -1301,22 +1329,27 @@
 			.social-block,	
 			.information-block {
 				float: left;
-				width: 25%;
+				max-width: 25%;
+				width: 100%;
 
 				.block-title {
-					margin: 0 0 22px;
+					margin: 0 0 12px;
 					color: white;
 					font: 400 20px / 22px $Swiss721BT;
 				}
 			}
 			.footer-main-menu {
-				min-width: 80px
+				min-width: 80px;
+				max-width: 200px;
+				margin: 0 0 0 33px;
 			}
 			.footer-services-menu {
 				min-width: 120px;
+				max-width: 285px;
 			}
 			.social-block {
 				min-width: 125px;
+				max-width: 230px;
 
 				.social-icon-list {
 					@include border-box;
@@ -1328,7 +1361,7 @@
 
 						&:nth-child(3n+1),
 						&:nth-child(3n+3) {
-							margin: 3px 0;
+							margin: 5px 0;
 						}
 
 						a {
@@ -1369,11 +1402,11 @@
 				text-align: right;
 
 				.location {
+					margin: 18px 4px 15px 0;
 					text-align: right;
 					h3 {
-						margin-bottom: 20px;
 						color: white;
-						font: 400 18px / 22px $Swiss721BT;
+						font: 400 16px / 20px $Swiss721BT;
 
 						span {
 							display: block;
@@ -1382,11 +1415,12 @@
 				}
 
 				.footer-phone {
+					margin: 0 5px 0 0;
 					color: white;
-					font: 400 16px 22px $Swiss721BT;
+					font: 400 16px / 22px $Swiss721BT;
 
 					.fa {
-						padding-right: 5px;
+						padding-right: 7px;
 					}
 				}
 			}
@@ -1447,243 +1481,71 @@
 
 
 @media (min-width: 1200px) {
-// 	.page-slider {
-// 		.swiper-container-home-page {
-// 			.swiper-button-next {
-// 				right: 12%
-// 			}
-// 			.swiper-button-prev {
-// 				left: 16%;
-// 			}
-// 		}
-// 		.blog-more-page {
 
-// 			.slider-more {
-// 				max-width: 1020px;
-// 				margin: 39px auto 30px;
-// 				padding: 0 15px 0 50px;
-
-
-// 				.center {
-// 					padding: 0 30px 0 40px;
-
-// 					.slick-slide {
-// 						height: 190px;
-// 						width: 287px !important;
-// 						margin: 0 14px;
-// 					}
-
-// 					.fa-long-arrow-left {
-// 						left: 22px;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// // -----------------------------------------
-
-// .register-OOO-page,
-// .register-PP-page,
-// .like-slider-page {
-// 	.poster-section {
-// 		.position-content-block {
-// 			top: -80px;
-// 			letter-spacing: -0.2px;
-
-// 			.content-title {
-// 				margin: 0 0 15px;
-// 			}
-// 		}
-// 	}
-// }
-// .like-slider-page {
-// 	.poster-section {
-// 		.position-content-block {
-// 			top: -105px;
-// 			letter-spacing: -0.7px;
-// 			padding-left: 8px;
-
-// 			.content-title {
-// 				margin: 0 0 9px;
-// 			}
-// 		}
-// 	}
-// 	.how-to-register-section {
-// 		padding: 56px 0 32px;
-// 		.section-title {
-// 			span {
-// 				display: block;
-// 			}
-// 		}
-// 		.benefits-list-desctop {
-// 			margin: 31px auto 64px;
-// 			padding: 37px 15px 39px 47px;
-// 		}
-
-// 		.flaw-list-desctop {
-// 			margin: 23px auto 31px;
-// 			padding: 40px 15px 39px 47px;
-// 		}
-// 	}
-
-// 	.register-section {
-// 		padding: 77px 0 44px;
-// 		.answer-block {
-// 			padding: 0 0 23px; 
-// 		}
-// 		.complate-form {
-// 			#register-OOO-form-customize {
-// 				.checkbox-block {
-// 					.question {
-// 						width: 31%;
-// 					}
-// 					.fiftinth-percent {
-// 						width: 31%;
-// 					}
-
-// 					.squaredFour {
-// 						float: inherit;
-// 						margin-left: 10px;
-// 					}
-// 				}
-// 				#sbm-OOO-btn-customize {
-// 					float: right;
-// 					margin: 50px 0 0;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .register-PP-page {
-// 	.poster-section {
-// 		.position-content-block {
-// 			top: -103px;
-// 			letter-spacing: -0.7px;
-// 			padding-left: 4px;
-// 		}
-// 	}
-// }
-// .how-to-register-section {
-// 	padding: 56px 0 67px;
-// 	.step-register-list {
-// 		overflow: hidden;
-// 		margin: 50px auto 25px;
-// 		padding: 0 10px 15px;
-// 		li {
-// 			margin: 0;
-// 			min-height: 317px;
-// 			padding: 26px 18px 17px 36px;
-// 			&:nth-child(odd) {
-// 				margin: 0 0 0 5px;
-// 			}
-
-// 			&:nth-child(even) {
-// 				margin: 0 -9px 0 0;
-// 			}
-
-// 			.step-description {
-// 				margin: 28px 0 0;
-// 			}
-// 		}
-// 	}
-
-// 	.after-steps-title {
-// 		clear: both;
-// 		margin: 0 auto 22px;
-// 		padding-left: 20px;
-// 		letter-spacing: -1.4px;
-// 	}
-// 	.after-steps-description {
-// 		padding-left: 16px;
-// 		letter-spacing: -1.2px;
-// 	}
-
-// 	.low-text {
-// 		margin: 24px auto 0;
-// 		padding: 36px 51px 17px 35px;
-// 		max-width: 970px;
-// 	}
-
-// 	.after-low-title {
-// 		margin: 66px auto 0;
-// 	}
-// }
-
-// .register-OOO-page {
-// 	.register-section {
-// 		padding: 58px 0 43px;
-// 		.service-table {
-// 			padding: 45px 0 48px 33px;
-// 		}
-
-// 		.complate-form {
-// 			.form-title {
-// 				margin: 40px auto 45px;
-// 			}
-
-// 			#register-OOO-form {
-// 				.activities-main {
-// 					min-height: 307px;
-
-// 					label,
-// 					#activities-main {
-// 						min-height: 307px;
-// 					}
-// 				}
-
-// 				#sbm-OOO-btn {
-// 					margin: 37px 0 2px;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .register-PP-page {
-// 	.register-section {
-// 		padding: 80px 0 43px;
-
-// 		.answer-block {
-// 			padding: 0 0 22px;
-// 		}
-
-// 		.service-table {
-// 			padding: 3px 0 51px 33px;
-// 		}
-
-// 		.complate-form {
-// 			padding: 17px 0 19px 33px;
-
-// 			#register-PP-form {
-// 				#sbm-PP-btn {
-// 					margin: 62px 0 1px;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .register-section {
-// 	padding: 58px 0 60px;
-
-// 	.section-title {
-// 		padding-left: 15px;
-// 		letter-spacing: 0.3px;
-// 	}
-// }
-
-header {
-	.main-menu {
-		.list-menu {
-			li {
-				padding: 9px 0 3px;
+	header {
+		.main-menu {
+			.list-menu {
+				li {
+					padding: 9px 0 3px;
+				}
 			}
 		}
 	}
-}
+	.like-slider-page {
+		.poster-section {
+			height: 1099px;
+			.bottom-text {
+				padding: 20px 0 65px 49px;
 
+				.bottom-text-title {
+					margin: 0 0 25px;
+				}
+				.bottom-text-content {
+					margin: 0 0 10px 0;
+				}
+			}
+		}
+	}
+	.blog-tegs {
+		.tegs-list {
+			width: 100%;
+			overflow: hidden;
+			margin: -11px 0 0 0;
+			padding: 10px 0 25px 39px;
+			background-position: right top !important;
 
+			.rotate-title {
+				top: 19%;
+				right: -13px;
+			}
+
+			.tegs-title {
+				overflow: hidden;
+				margin: -6px 0 0 0;
+				a {
+
+				}
+			}
+		}
+	}
+
+	.quote-form-section {
+		.section-position-title {
+			top: -28px;
+			left: 15px;
+			width: 220px;
+			height: 52px;
+		}
+
+	}
+
+	.map-section {
+		.section-position-title {
+			top: -33px;
+			left: 15px;
+			height: 55px;
+		}
+	}
 // -----------------------------------------
 }
 @media (min-width: 1800px) {
