@@ -2,21 +2,21 @@
 
 
 @font-face {
-  font-family: 'Swiss721BT';
-  src: url('../resources/Swis721BT/Roman/Swiss721BT-Roman.woff') format('woff'),
-       url('../resources/Swis721BT/Roman/Swiss721BT-Roman.ttf') format('truetype'),
-       url('../resources/Swis721BT/Roman/Swiss721BT-Roman.svg#Swiss721BT-Roman') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Swiss721BT';
+	src: url('../resources/Swis721BT/Roman/Swiss721BT-Roman.woff') format('woff'),
+	url('../resources/Swis721BT/Roman/Swiss721BT-Roman.ttf') format('truetype'),
+	url('../resources/Swis721BT/Roman/Swiss721BT-Roman.svg#Swiss721BT-Roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Swiss721BT';
-  src: url('../resources/Swis721BT/Roman/TT0003M_.eot');
-  src: url('../resources/Swis721BT/Roman/TT0003M_.woff2') format('woff2'),
-       url('../resources/Swis721BT/Roman/TT0003M_.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Swiss721BT';
+	src: url('../resources/Swis721BT/Roman/TT0003M_.eot');
+	src: url('../resources/Swis721BT/Roman/TT0003M_.woff2') format('woff2'),
+	url('../resources/Swis721BT/Roman/TT0003M_.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -60,20 +60,31 @@ $Montserrat: 'Montserrat', sans-serif;
 
 	li {
 		display: inline-block;
-		margin: 0 6px;
+		margin: 0 1px;
+		width: 28px;
+		height: 28px;
 
 		a {
 			display: block;
-			color: #828282;
-			font: 400 18px / 20px $Swiss721BT;
+			width: 15px;
+			height: 15px;
+			margin: 0 auto;
+			text-align: center;
+			background: rgba(255, 255, 255, 1);
 			@include transition;
 
 			&:hover {
-				color: #5ca7dc;
+				background: rgba(215,122,2,1);
+				-webkit-box-shadow: 0px 0px 0px 6px rgba(215,122,2,1);
+				-moz-box-shadow: 0px 0px 0px 6px rgba(215,122,2,1);
+				box-shadow: 0px 0px 0px 6px rgba(215,122,2,1);
 			}
 		}
 		a.pagination-active {
-			color: #5ca7dc;
+			background: rgba(215,122,2,1);
+			-webkit-box-shadow: 0px 0px 0px 6px rgba(215,122,2,1);
+			-moz-box-shadow: 0px 0px 0px 6px rgba(215,122,2,1);
+			box-shadow: 0px 0px 0px 6px rgba(215,122,2,1);
 		}
 	}
 	.desctop {
@@ -82,14 +93,6 @@ $Montserrat: 'Montserrat', sans-serif;
 	@media (min-width: 1024px) {
 		margin: 72px auto 16px;
 		padding-left: 15px;
-
-		li {
-			margin: 0 5px;
-
-			a {
-				font-size: 19px;
-			}
-		}
 
 		.mobile {
 			display: none;
@@ -219,131 +222,6 @@ a {
 }
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// MODAL VINDOW
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.7);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 35px 20px;
-	border-radius: 10px;
-	background: #fff;
-	border: 5px solid #55a1d7;
-	background: #fff;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	text-align: center;
-	width: 330px;
-
-	.lock-title {
-		max-width: 205px;
-		overflow: hidden;
-		margin: 0 auto;
-		color: #a1a1a1;
-		font: 300 12px / 14px $Swiss721BT;
-
-		img {
-			float: left;
-			margin: 0 10px 0 0;
-		}
-		
-	}
-}
-.modalDialog > div .modal-title {
-	font: 300 24px / 26px $Swiss721BT;
-}
-.modalDialog > div .moda-sign {
-	margin: 20px auto;
-	font: 300 16px / 20px $Swiss721BT;
-}
-.modalDialog > div #modal-form {
-	#moda-name,
-	#modal-phone {
-		display: block;
-		max-width: 232px;
-		width: 100%;
-		display: inline-block;
-		vertical-align: middle;
-		height: 40px;
-		background: #fff;
-		border-radius: 0px;
-		margin-bottom: 10px;
-		padding-left: 45px;
-		border: 1px solid #d8d8d8;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;
-		-webkit-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		@include border-box;
-		margin-bottom: 15px;
-		outline: none;
-	}
-	#moda-name {
-		background: #fff url("../images/person.png") no-repeat;
-		background-position: 5px 8px !important;
-	}
-	#modal-phone {
-		background: #fff url("../images/modal-phone.png") no-repeat;
-		background-position: 10px !important;
-	}
-	#modal-sbm-btn {
-		display: block;
-		width: 234px;
-		height: 50px;
-		margin: 15px auto 30px;
-		font: 400 18px / 50px $Swiss721BT;
-		color: #fff;
-		height: 100%;
-		border: none;
-		background: #3392D6;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		border-radius: 30px;
-		outline: none !important;
-		-webkit-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		cursor: pointer;
-	} 
-}
-.close {
-	color: #B8B8B8;
-	line-height: 25px;
-	position: absolute;
-	right: 5px;
-	text-align: center;
-	top: 5px;
-	width: 24px;
-	text-decoration: none;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-}
-
-.close:hover { color: #6AB0D4; }
-
 @import "header";
 @import "footer";
 @import "main-page";
