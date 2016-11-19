@@ -10,17 +10,6 @@ $(function () {
     });
 });
 
-// for main menu desctop
-$(function () {
-    $('.overlay ul li a').each(function () {
-        var location = window.location.pathname;
-        var link = this.pathname;
-        var result = location.match(link);
-        if(result && link.length > 0) {
-            $(this).addClass('desctop-menu-active');
-        }
-    });
-});
 
 // for footer menu
 $(function () {
@@ -63,19 +52,13 @@ var swiper_main = new Swiper('.swiper-container-home-page', {
     autoplayDisableOnInteraction: false
 });
 
-// DESCTOP MENU
-$('#toggle').click(function() {
-  $(this).toggleClass('active');
-  $('#overlay').toggleClass('open');
-  $('#toggle').parents('.inside-page-header').css('padding: 0;')
-});
 
 
 // FOR SLIDER MORE 
 $('.center').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
         {
@@ -84,7 +67,7 @@ $('.center').slick({
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 2
             }
         },
         {
@@ -97,16 +80,6 @@ $('.center').slick({
             }
         }
     ],
-nextArrow: '<i class="fa fa-long-arrow-right"></i>',
-prevArrow: '<i class="fa fa-long-arrow-left"></i>',
+nextArrow: '<img class="prev-btn" src="images/more-prev.png" alt="more prev">',
+prevArrow: '<img class="next-btn" src="images/more-next.png" alt="more next">',
 });
-// for annation scroll
-// $(document).ready(function() {
- 
-// $('a[href^="#"]').click(function(){
-//   var el = $(this).attr('href');
-//   $('body').animate({
-//       scrollTop: $(el).offset().top}, 2000);
-//   	return false; 
-// 	});
-// });
