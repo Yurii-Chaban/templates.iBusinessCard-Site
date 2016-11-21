@@ -711,6 +711,33 @@
 				}
 			}
 
+			.services-item-active {
+				.icon-first {
+					background: url("../images/1_2.png") no-repeat;
+				}
+				.icon-second {
+					background: url("../images/2_2.png") no-repeat;
+				}
+				.icon-third {
+					background: url("../images/3_2.png") no-repeat;
+				}
+				.icon-fourth {
+					background: url("../images/4_2.png") no-repeat;
+				}
+				.icon-fifth {
+					background: url("../images/5_2.png") no-repeat;
+				}
+				.icon-sixth {
+					background: url("../images/6_2.png") no-repeat;
+				}
+
+				.services-icon-title {
+					a {
+						color: #e17f00;
+					}
+				}
+			}
+
 		}
 	}
 
@@ -1649,7 +1676,7 @@
 
 				.img-container {
 					float: left;
-					margin: 0 auto;
+					margin: 0 10px 0 0;
 					width: 107px;
 					height: 105px;
 
@@ -1662,7 +1689,7 @@
 
 				.services-icon-title {
 					overflow: hidden;
-					margin: 45px 0 0 10px;
+					margin: 85px 0 0 10px;
 					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.24);
 					color: white;
 					font: 400 28px / 30px $Swiss721BT;

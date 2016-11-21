@@ -10,6 +10,17 @@ $(function () {
     });
 });
 
+// for services-more page services item
+$(function () {
+    $('.services-section .services-list li a').each(function () {
+        var location = window.location.pathname;
+        var link = this.pathname;
+        var result = location.match(link);
+        if(result && link.length > 0) {
+            $(this).parents("li").addClass('services-item-active');
+        }
+    });
+});
 
 // for footer menu
 $(function () {
