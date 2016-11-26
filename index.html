@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>templates.iBusinessCard</title>
-	<meta name="keywords" content="Формула бизнеса">
+	<meta name="keywords" content="templates.iBusinessCard">
 
 	<link rel="shortcut icon" href="images/favicon.ico" >
 	<!-- Include media queries -->
@@ -14,6 +14,8 @@
 	<!--- Component CSS -->
 	<link rel="stylesheet" href="stylesheets/swiper.min.css">
 	<link rel="stylesheet" href="stylesheets/sticky.css">
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 
 </head>
@@ -48,7 +50,7 @@
 			</div>
 			<div class="call-us-block">
 				<label for="hider">
-					<!-- <img src="images/icon-phone.png" alt="icon phone"> -->
+					<img src="images/icon-phone.png" alt="icon phone">
 				</label>
 				<input type="checkbox" checked="no" id="hider">
 				<div id="info-mobile" class="header-info-mobile">
@@ -112,45 +114,33 @@
 	</header>
 	<section class="site-container like-slider-page">
 		<section class="site-container poster-section">
-			<img class="poster-img" src="images/main-slider-img.jpg" alt="poster image">
-			<!-- Swiper -->
-			<div class="swiper-container swiper-container-home-page">
-				<!-- <div class="wrapper"> -->
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="position-content-block">
-							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
-							<p class="content-text">Make Repairs With Pleasure</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="position-content-block">
-							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
-							<p class="content-text">Make Repairs With Pleasure</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="position-content-block">
-							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
-							<p class="content-text">Make Repairs With Pleasure</p>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="position-content-block">
-							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
-							<p class="content-text">Make Repairs With Pleasure</p>
-						</div>
-					</div>
-					<!-- </div> -->
-				</div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
+			<div class="rgba-slider"></div>
+			<!-- <img class="poster-img" src="images/main-slider-img.jpg" alt="poster image"> -->
+			<img class="poster-img" src="images/home-page-poster.jpg" alt="poster image">
 			<div class="wrapper">
+				<div class="fade">
+					<div class="slide">
+						<div class="position-content-block">
+							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
+							<p class="content-text">Make Repairs With Pleasure</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="position-content-block">
+							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
+							<p class="content-text">Make Repairs With Pleasure</p>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="position-content-block">
+							<h2 class="content-title">STYLISH RENOVATION <span>FOR YOUR HOME</span></h2>
+							<p class="content-text">Make Repairs With Pleasure</p>
+						</div>
+					</div>
+				</div>
 				<div class="more-block">
 					<div class="caption">
-						<p>Replace this text with updates on the building page</p>
+						<p>Replace this text <span>with updates on the building page</span></p>
 					</div>
 					<a class="more-btn" href="#">More</a> 
 				</div>
@@ -158,68 +148,84 @@
 			<div class="bottom-text">
 				<div class="wrapper">
 					<h3 class="bottom-text-title">Welcome</h3>
-					<p class="bottom-text-content">Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project.</p>
+					<p>Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project.</p>
 				</div>
 			</div>
 		</section>
-		<section id="services-section" class="site-container services-section">
-			<div class="wrapper">
-				<h2 class="section-position-title">
-					<span>Our Services</span>
-				</h2>
-				<ul class="services-list">
-					<li>
-						<div class="icon-wrapper icon-first">
-							<a href="services-more-page.html"></a>
-						</div>
-						<h3 class="services-icon-title">
-							<a href="services-more-page.html">Service 01</a>
-						</h3>
-					</li>
-					<li>
-						<div class="icon-wrapper icon-second">
-							<a href="services-more-page.html"></a>
-						</div>
-						<h3 class="services-icon-title">
-							<a href="services-more-page.html">Service 02</a>
-						</h3>
-					</li>
-					<li>
-						<div class="icon-wrapper icon-third">
-							<a href="services-more-page.html"></a>
-						</div>
-						<h3 class="services-icon-title">
-							<a href="services-more-page.html">Service 03</a>
-						</h3>
-					</li>
-					<li>
-						<div class="icon-wrapper icon-fourth">
-							<a href="services-more-page.html"></a>
-						</div>
-						<h3 class="services-icon-title">
-							<a href="services-more-page.html">Service 04</a>
-						</h3>
-					</li>
-					<li>
-						<div class="icon-wrapper icon-fifth">
-							<a href="services-more-page.html"></a>
-						</div>
-						<h3 class="services-icon-title">
-							<a href="services-more-page.html">Service 05</a>
-						</h3>
-					</li>
-					<li>
-						<div class="icon-wrapper icon-sixth">
-							<a href="services-more-page.html"></a>
-						</div>
-						<h3 class="services-icon-title">
-							<a href="services-more-page.html">More Service</a>
+	</section>
+	<section id="services-section" class="site-container services-section">
+		<div class="wrapper">
+			<h2 class="section-position-title">
+				<span>Our Services</span>
+			</h2>
+			<ul class="services-list">
+				<li>
+					<div class="icon-wrapper icon-first">
+						<a href="services-more-page.html">
+							<img src="images/1_2.png" alt="services item">
+						</a>
+					</div>
+					<h3 class="services-icon-title">
+						<a href="services-more-page.html">Service 01</a>
+					</h3>
+				</li>
+				<li>
+					<div class="icon-wrapper icon-second">
+						<a href="services-more-page.html">
+							<img src="images/2_2.png" alt="services item">
+						</a>
+					</div>
+					<h3 class="services-icon-title">
+						<a href="services-more-page.html">Service 02</a>
+					</h3>
+				</li>
+				<li>
+					<div class="icon-wrapper icon-third">
+						<a href="services-more-page.html">
+							<img src="images/3_2.png" alt="services item">
+						</a>
+					</div>
+					<h3 class="services-icon-title">
+						<a href="services-more-page.html">Service 03</a>
+					</h3>
+				</li>
+				<li>
+					<div class="icon-wrapper icon-fourth">
+						<a href="services-more-page.html">
+							<img src="images/4_2.png" alt="services item">
+						</a>
+					</div>
+					<h3 class="services-icon-title">
+						<a href="services-more-page.html">Service 04</a>
+					</h3>
+				</li>
+				<li>
+					<div class="icon-wrapper icon-fifth">
+						<a href="services-more-page.html">
+							<img src="images/5_2.png" alt="services item">
+						</a>
+					</div>
+					<h3 class="services-icon-title">
+						<a href="services-more-page.html">Service 05</a>
+					</h3>
+				</li>
+				<li>
+					<div class="icon-wrapper icon-sixth">
+						<a href="services-more-page.html">
+							<img class="for-desctop" src="images/6_2.png" alt="services item">
+							<img class="for-mobile" src="images/services-6_2.png" alt="services item">
+						</a>
+					</div>
+					<h3 class="services-icon-title">
+						<a href="services-more-page.html">
+							<span class="for-desctop">More Service </span>
+							<span class="for-mobile">Service 06</span></a>
 						</h3>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="site-container stock-section">
+		<section class="site-container stock-section why-section">
 			<div class="top-rgba">
 				<div class="wrapper">
 					<h2 class="title">Why Us</h2>
@@ -227,7 +233,7 @@
 			</div>
 			<div class="bottom-rgba"></div>
 			<div class="section-img-wrapper">
-				<img class="position-img" src="images/poster-section.jpg" alt="stock img">
+				<img class="position-img" src="images/why-us-bg.jpg" alt="stock img">
 				<div class="under-layer">
 					<div class="wrapper">
 						<ul class="advantages-list">
@@ -287,6 +293,9 @@
 						<a class="visit-blog-btn" href="blog.html">Visit Our Blog</a>
 					</h3>
 				</div>
+				<div class="mobile-block">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. with the release of Letraset sheets containing. printer took a galley of type and scrambled it to make a type.</p>
+				</div>
 			</div>
 		</section>
 		<section id="quote-block" class="site-container quote-form-section">
@@ -308,7 +317,7 @@
 							</div>
 							<div class="row number">
 								<label for="number">Number</label>
-								<input id="number" type="phone" autocomplete="off">
+								<input id="number" type="tel" autocomplete="off">
 							</div>
 							<div class="row email">
 								<label for="email">E-mail</label>
@@ -319,9 +328,9 @@
 								<label>
 									<select id="select-services" class="ui dropdown" name="services item">
 										<option value="">Choose</option>
-										<option value="register-OOO">Регистрация ООО</option>
-										<option value="register-PP">Регистрация ИП</option>
-										<option value="customize-OOO">Внесение изменений в ООО</option>
+										<option value="services-1">Services-1</option>
+										<option value="services-2">Services-2</option>
+										<option value="services-3">Services-3</option>
 									</select>
 								</label>
 							</div>
@@ -334,23 +343,77 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="site-container map-section">
-		<div class="wrapper">
-			<h2 class="section-position-title">
-				<span>Get Direrection</span>
-			</h2>
-		</div>
-		<div class="mapWrapper">
-			<div id="mapWrapper"></div>
-			<h5 class="map-overflow">&nbsp;</h5>
-		</div>
-		<div class="prefooter">
+		</section>
+		<section class="site-container map-section">
 			<div class="wrapper">
-				<nav class="navigations-menu-block">
-					<div class="footer-main-menu">
-						<h2 class="block-title">Menu:</h2>
+				<h2 class="section-position-title">
+					<span>Get Direrection</span>
+				</h2>
+				<h2 class="section-position-title-mobile">
+					<span>Contact Us</span>
+				</h2>
+			</div>
+			<div class="mapWrapper">
+				<div id="mapWrapper"></div>
+				<h5 class="map-overflow">&nbsp;</h5>
+			</div>
+			<div class="prefooter-mobile">
+				<div class="wrapper">
+					<div class="overflow-block">
+						<div class="information-block">
+							<h2 class="block-title">Address:</h2>
+							<div class="location">
+								<h3>
+									<span>326 South Mozart Street,</span>
+									<span>Chicago, IL 60612, USA</span>
+								</h3>
+							</div>
+							<a class="get-direction-btn">
+								<span>Get Direction</span>
+							</a>
+							<h4 class="contact-row">
+								<span class="titile">Phone:</span>
+								<a href="tel:2251264455">
+									<span>225.126.4455</span>
+								</a>
+							</h4>
+							<h4 class="contact-row">
+								<span class="titile">Fax:</span>
+								<a href="tel:2251264422">
+									<span>225.126.4422</span>
+								</a>
+							</h4>
+							<h4 class="contact-row">
+								<span class="titile">E-mail:</span>
+								<a href="mailto:Name@website.com">
+									<span>Name@website.com</span>
+								</a>
+							</h4>
+						</div>
+						<div class="social-block">
+							<h2 class="block-title">Follow Us On:</h2>
+							<ul class="social-icon-list">
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-google-plus" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-main-menu">
+					<div class="wrapper">
 						<ul class="footer-main-menu-list">
 							<li>
 								<a href="index.html">Home</a>
@@ -369,120 +432,130 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-services-menu">
-						<h2 class="block-title">Our Services:</h2>
-						<ul class="footer-services-menu">
-							<li>
-								<a href="services.html">Service 01</a>
-							</li>
-							<li>
-								<a href="services.html">Service 02</a>
-							</li>
-							<li>
-								<a href="services.html">Service 03</a>
-							</li>
-							<li>
-								<a href="services.html">Service 04</a>
-							</li>
-							<li>
-								<a href="services.html">Service 05</a>
-							</li>
-						</ul>
-					</div>
-					<div class="social-block">
-						<h2 class="block-title">Follow Us On:</h2>
-						<ul class="social-icon-list">
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-google-plus" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-rss" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-plus" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-instagram" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-envelope-o" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-linkedin" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-					<div class="information-block">
-						<h2 class="block-title">Contact Us:</h2>
-						<div class="location">
-							<h3>
-								<span>326 South Mozart Street,</span>
-								<span>Chicago, IL 60612, USA</span>
-							</h3>
+				</div>
+			</div>
+			<div class="prefooter">
+				<div class="wrapper">
+					<nav class="navigations-menu-block">
+						<div class="footer-main-menu">
+							<h2 class="block-title">Menu:</h2>
+							<ul class="footer-main-menu-list">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="about.html">About Us</a>
+								</li>
+								<li>
+									<a href="services.html">Services</a>
+								</li>
+								<li>
+									<a href="blog.html">Blog</a>
+								</li>
+								<li>
+									<a href="contacts.html">Contact Us</a>
+								</li>
+							</ul>
 						</div>
-						<a class="footer-phone" href="tel:2251264455">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							<span>225.126.4455</span>
-						</a>
-					</div>
-				</nav>
+						<div class="footer-services-menu">
+							<h2 class="block-title">Our Services:</h2>
+							<ul class="footer-services-menu">
+								<li>
+									<a href="services.html">Service 01</a>
+								</li>
+								<li>
+									<a href="services.html">Service 02</a>
+								</li>
+								<li>
+									<a href="services.html">Service 03</a>
+								</li>
+								<li>
+									<a href="services.html">Service 04</a>
+								</li>
+								<li>
+									<a href="services.html">Service 05</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social-block">
+							<h2 class="block-title">Follow Us On:</h2>
+							<ul class="social-icon-list">
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-google-plus" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-rss" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-linkedin" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="information-block">
+							<h2 class="block-title">Contact Us:</h2>
+							<div class="location">
+								<h3>
+									<span>326 South Mozart Street,</span>
+									<span>Chicago, IL 60612, USA</span>
+								</h3>
+							</div>
+							<a class="footer-phone" href="tel:2251264455">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span>225.126.4455</span>
+							</a>
+						</div>
+					</nav>
+				</div>
 			</div>
-		</div>
-	</section>
-	<footer class="site-container inside-page-footer">
-		<div class="copyright">
-			<div class="wrapper">
-				<h3 class="copyright-sign">
-					<a href="http://globalvision.name/">Website development</a> &copy; 
-					<a href="http://globalvision.name/">Global Vision</a>
-				</h3>
+		</section>
+		<footer class="site-container inside-page-footer">
+			<div class="copyright">
+				<div class="wrapper">
+					<h3 class="copyright-sign">
+						<a href="http://globalvision.name/">Website development</a> &copy; 
+						<a href="http://globalvision.name/">Global Vision</a>
+					</h3>
+				</div>
 			</div>
-		</div>
-	</footer>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/swiper.jquery.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/googleMapCustomize.js"></script>
-	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgDH4m_6s_NqTieahs1Ft9R4ndkKQk0N8&sensor=false&extension=.js'></script>
-	<script src="js/main.js"></script>
-	<!-- I use here, because that does not work when using the code in the file main.js -->
-	<script>
-		$(document).ready(function() {
-
-			$('.quote-btn').click(function(){
-				var el = $(this).attr('href');
-				$('body').animate({
-					scrollTop: $(el).offset().top}, 1000);
-				return false; 
-			});
-		});
-	</script>
-</body>
-</html>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/googleMapCustomize.js"></script>
+		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgDH4m_6s_NqTieahs1Ft9R4ndkKQk0N8&sensor=false&extension=.js'></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>

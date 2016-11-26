@@ -114,8 +114,8 @@
 		<section class="site-container poster-section">
 			<div class="under-rgba-layer"></div>
 			<img class="poster-img" src="images/blog-poster.jpg" alt="poster image">
-			<div class="articles-block">
-				<div class="wrapper">
+			<div class="wrapper">
+				<div class="articles-block">
 					<h2 class="section-main-title">Blog</h2>
 					<ul class="articles-list">
 						<li>
@@ -125,7 +125,7 @@
 							<div class="owerflow-block">
 								<h2 class="article-title">Name Of Article</h2>
 								<div class="article-content">
-								<p>Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project...</p>
+									<p>Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project. Replace this text with updates on the building project...</p>
 								</div>
 								<a class="more-btn" href="articles-more-page.html">More</a>
 							</div>
@@ -271,9 +271,9 @@
 								<label>
 									<select id="select-services" class="ui dropdown" name="services item">
 										<option value="">Choose</option>
-										<option value="register-OOO">Регистрация ООО</option>
-										<option value="register-PP">Регистрация ИП</option>
-										<option value="customize-OOO">Внесение изменений в ООО</option>
+										<option value="services-1">Services-1</option>
+										<option value="services-2">Services-2</option>
+										<option value="services-3">Services-3</option>
 									</select>
 								</label>
 							</div>
@@ -417,24 +417,9 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
-	<script src="js/swiper.jquery.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/googleMapCustomize.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgDH4m_6s_NqTieahs1Ft9R4ndkKQk0N8&sensor=false&extension=.js'></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
-	<!-- I use here, because that does not work when using the code in the file main.js -->
-	<script>
-		$(document).ready(function() {
-
-			$('.quote-btn').click(function(){
-				var el = $(this).attr('href');
-				$('body').animate({
-					scrollTop: $(el).offset().top}, 1000);
-				return false; 
-			});
-		});
-	</script>
 </body>
 </html>
