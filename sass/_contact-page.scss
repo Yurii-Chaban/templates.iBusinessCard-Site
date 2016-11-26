@@ -1,0 +1,269 @@
+.contact-page {
+	border-bottom: 5px solid #b36704;
+	.poster-section {
+		height: 581px;
+		.under-rgba-layer {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		.contact-content {
+			position: relative;
+			z-index: 2;
+			margin: 50px auto 0;
+
+			.contact-info,
+			.feedback-form {
+				overflow: hidden;
+				.contact-title,
+				.form-title {
+					margin: 0 12px 25px 0;
+					color: white;
+					font: 400 28px / 30px $Swiss721BT;
+				}
+			}
+
+			.contact-info {
+				float: left;
+
+				.contact-info-list {
+					@include border-box;
+					margin: 0 auto;
+					text-align: center;
+
+					li {
+						display: block;
+						margin: 0 0 10px;
+						text-align: left;
+
+						.title {
+							margin: 0 0 10px 0;
+							color: #e17f00;
+							font: 400 20px / 22px $Swiss721BT;
+						}
+
+						.content {
+							span,
+							a {
+								display: block;
+								color: white;
+								font: 400 18px / 20px $Swiss721BT;
+							}
+						}
+
+						.get-direction-btn {
+							display: block;
+							width: 137px;
+							height: 25px;
+							margin: 8px 0 15px 0;
+							color: #010101;
+							font: 400 17px / 22px $Swiss721BT;
+							background: url("../images/our-services-colore-mobile.png") no-repeat;
+							cursor: pointer;
+
+							span {
+								display: block;
+								margin: 5px 0 0 7px;
+							}
+						}
+
+						.social-block {
+							margin: 15px 0 0;
+							.social-icon-list {
+								li {
+									display: inline-block;
+									margin: 0 5px;
+
+									&:first-child {
+										margin-left: 0;
+									}
+
+									&:last-child {
+										margin-right: 0;
+									}
+
+									a {
+										display: block;
+										width: 41px;
+										height: 41px;
+										-moz-border-radius: 100%;
+										-webkit-border-radius: 100%;
+										border-radius: 100%;
+										border: 2px solid #fff;
+										@include transition;
+
+										.fa {
+											display: block;
+											margin: 0 auto;
+											text-align: center;
+											line-height: 41px;
+											color: #fff;
+											font-size: 26px;
+											@include transition;
+										}
+
+										&:hover {
+											border-color: #f3840d;
+
+											.fa {
+												color: #f3840d;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.feedback-form {
+				display: none;
+			}
+
+		}
+		.form-wrapper {
+			position: relative;
+			overflow: hidden;
+			margin: 0;
+			max-width: 100%;
+			width: 100%;
+			@include border-box; 
+			border: 20px solid transparent;
+			border-image: url("../images/quate-form-border.png");
+			border-image-slice: 20;
+
+			&:before {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.37);
+			}
+			
+			#quote-form {
+				max-width: 469px;
+				margin: 0 0 0 20px;
+			}
+
+			.row {
+				overflow: hidden;
+				label,
+				.services-label {
+					display: block;
+					margin: 0 0 3px 10px;
+					color: white;
+					font: 400 12px / 14px $Swiss721BT;
+				}
+
+				#first-name,
+				#number,
+				#email, 
+				#select-services,
+				#message {
+					background: #fff;
+					border: none;
+					outline: none;
+					resize: none;
+					color: #000;
+					font: 400 14px / 19px $Swiss721BT;
+					@include border-box;
+				}
+
+				#message {
+					width: 100%;
+					height: 88px;
+				}
+
+				#first-name,
+				#number,
+				#email {
+					padding: 0 0 0 10px;
+				}
+
+				#first-name,
+				#number,
+				#email, 
+				#select-services {
+					display: block;
+					width: 100%;
+					height: 24px;
+					@include border-box;
+				}
+
+				#select-services {
+					color: #ffa200;
+					padding-left: 10px;
+				}
+			}
+
+			.first-name,
+			.email,
+			.number,
+			.selection-block {
+				margin: 0 0 7px;
+			}
+
+			.first-name,
+			.email {
+				width: 220px;
+				float: left;
+				clear: left;
+			} 
+
+			.number,
+			.selection-block {
+				width: 220px;
+				float: right;
+				clear: right;
+			}
+
+			.selection-block {
+				label {
+					margin: 0;
+					position: relative;
+
+					&:after {
+						position: absolute;
+						top: 0;
+						right: 0;
+						content: "";
+						width: 20px;
+						height: 100%;
+						background: #fff;
+						z-index: 2;
+					}
+				}
+			}
+
+			.message {
+				clear: both;
+			}
+
+			#quote-sbm-btn {
+				float: right;
+				margin: 5px 6px 0 0;
+				color: #ffa200;
+				font: 400 14px / 16px $Swiss721BT;
+				background: none;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+	}
+}
+.contact-map-page {
+	display: none;
+}
+.quote-form-for-contact-page {
+	border: none !important;
+}

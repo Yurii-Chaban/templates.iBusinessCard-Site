@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>templates.iBusinessCard</title>
-	<meta name="keywords" content="Формула бизнеса">
+	<meta name="keywords" content="templates.iBusinessCard">
 
 	<link rel="shortcut icon" href="images/favicon.ico" >
 	<!-- Include media queries -->
@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<!--- Component CSS -->
 	<link rel="stylesheet" href="stylesheets/swiper.min.css">
-	<link rel="stylesheet" href="stylesheets/sticky.css">
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 
 </head>
@@ -48,7 +49,7 @@
 			</div>
 			<div class="call-us-block">
 				<label for="hider">
-					<!-- <img src="images/icon-phone.png" alt="icon phone"> -->
+					<img src="images/icon-phone.png" alt="icon phone">
 				</label>
 				<input type="checkbox" checked="no" id="hider">
 				<div id="info-mobile" class="header-info-mobile">
@@ -93,6 +94,20 @@
 						<a href="index.html">Company<br> Name</a>
 					</h2>
 				</div>
+				<div class="desctop-info-block">
+					<a class="quote-btn" href="#quote-block">
+						<span>Quote Request</span>
+					</a>
+					<a class="header-phone" href="tel:2251264455">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<span>225.126.4455</span>
+					</a>
+				</div>
+				<div class="button_container" id="toggle">
+					<span class="top"></span>
+					<span class="middle"></span>
+					<span class="bottom"></span>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -113,6 +128,11 @@
 								</h4>
 							</li>
 							<li>
+								<a class="get-direction-btn">
+									<span>Get Direction</span>
+								</a>
+							</li>
+							<li>
 								<h3 class="title">Phone:</h3>
 								<h4 class="content">
 									<a href="tel:2251264455">225.126.4455</a>
@@ -129,6 +149,27 @@
 								<h4 class="content">
 									<a href="mailto:Name@website.com">Name@website.com</a>
 								</h4>
+							</li>
+							<li>
+								<div class="social-block">
+									<ul class="social-icon-list">
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-google-plus" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -170,6 +211,52 @@
 				</div>
 			</div>
 		</section>
+	</section>
+	<section id="quote-block" class="site-container quote-form-section quote-form-for-contact-page">
+		<div class="section-img-wrapper">
+			<img class="full-width-img" src="images/quote-form-img.jpg" alt="quote form img">
+		</div>
+		<div class="rgba-bg-absolute">
+			<div class="wrapper">
+				<h2 class="section-position-title">
+					<span>Quote Request</span>
+				</h2>
+			</div>
+			<div class="wrapper">
+				<div class="form-wrapper">
+					<form action="#" id="quote-form">
+						<div class="row first-name">
+							<label for="first-name">First Name</label>
+							<input id="first-name" type="text" autocomplete="off">
+						</div>
+						<div class="row number">
+							<label for="number">Number</label>
+							<input id="number" type="tel" autocomplete="off">
+						</div>
+						<div class="row email">
+							<label for="email">E-mail</label>
+							<input id="email" type="email" autocomplete="off">
+						</div>
+						<div class="row selection-block">
+							<span class="services-label">Service</span>
+							<label>
+								<select id="select-services" class="ui dropdown" name="services item">
+									<option value="">Choose</option>
+									<option value="services-1">Services-1</option>
+									<option value="services-2">Services-2</option>
+									<option value="services-3">Services-3</option>
+								</select>
+							</label>
+						</div>
+						<div class="row message">
+							<label for="message">Message</label>
+							<textarea id="message"></textarea>
+						</div>
+						<input id="quote-sbm-btn" type="submit" name="submit" value="Send">
+					</form>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="site-container map-section contact-map-page">
 		<div class="wrapper">

@@ -72,16 +72,16 @@ $(document).ready(function() {
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '40px',
+            centerPadding: '20px',
             slidesToShow: 2
         }
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
+        arrows: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '0px',
         slidesToShow: 1
     }
 }
