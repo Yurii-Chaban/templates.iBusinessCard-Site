@@ -487,6 +487,18 @@
 		}
 	}
 
+	.articles-more-page {
+		.articles-more-content {
+			.text-content {
+				p {
+					span {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
 	.services-more-map {
 		height: 515px;
 	}
@@ -555,6 +567,7 @@
 			float: right;
 			width: 100%;
 			background: rgba(0, 0, 0, 0.4);
+			border-bottom: 1px solid #fff;
 
 			.list-menu {
 				float: right;
@@ -562,10 +575,10 @@
 				li {
 					display: inline-block;
 					margin: 0 0 0 44px;
-					padding: 7px 0 4px;
+					padding: 0;
 
 					a {
-						font: 400 16px / 22px $Swiss721BT;
+						font: 400 16px / 33px $Swiss721BT;
 						color: #fffefe;
 						@include transition;
 
@@ -2079,7 +2092,7 @@
 	.articles-more-page {
 		border-bottom: 5px solid #b36704;
 		.poster-section {
-			height: 976px;
+			height: 1195px;
 
 			.under-rgba-layer {
 				position: absolute;
@@ -2096,7 +2109,7 @@
 		.articles-more-content {
 			position: absolute;
 			z-index: 1;
-			top: 200px;
+			top: -270px;
 			
 			.articles-more-title {
 				margin: -13px 0 0 45px;
@@ -2136,31 +2149,31 @@
 			height: 271px;
 			background: rgba(0, 0, 0, 0.6);
 			.slider-more {
-				position: relative;
+				// position: relative;
 				width: 935px;
 				height: 212px;
 				max-height: 212px;
 				overflow: hidden;
-				margin: 12px 0 0 27px;
+				margin: 12px auto;
 
-				&:before,
-				&:after {
-					position: absolute;
-					content: "";
-					top: 0;
-					width: 67px;
-					height: 214px;
-					background: rgba(0, 0, 0, 0.7);
-					z-index: 4;
-				}
+				// &:before,
+				// &:after {
+				// 	position: absolute;
+				// 	content: "";
+				// 	top: 0;
+				// 	width: 67px;
+				// 	height: 214px;
+				// 	background: rgba(0, 0, 0, 0.7);
+				// 	z-index: 4;
+				// }
 
-				&:before {
-					left: 0;
-				}
+				// &:before {
+				// 	left: 0;
+				// }
 
-				&:after {
-					right: 0;
-				}
+				// &:after {
+				// 	right: 0;
+				// }
 
 				.slick-slider {
 					max-height: 212px;
@@ -2180,7 +2193,6 @@
 						height: 37px;
 						color: #fff;
 						font-size: 30px;
-						top: 88px;
 						// transform: translate(-50%, -50%);
 						cursor: pointer;
 						z-index: 5;
@@ -2362,7 +2374,9 @@
 	}
 
 	.why-section-more-services,
-	.blog-tegs-more-services {
+	.blog-tegs-more-services,
+	.why-section-more-articles,
+	.blog-tegs-more-articles {
 		display: none;
 	}
 }
@@ -2374,7 +2388,7 @@
 		.main-menu {
 			.list-menu {
 				li {
-					padding: 9px 0 3px;
+					padding: 0;
 				}
 			}
 		}
@@ -2459,7 +2473,7 @@
 	}
 	.articles-more-page {
 		.poster-section {
-			height: 976px;
+			height: 1195px;
 		}
 	}
 	.services-more-page {

@@ -26,6 +26,7 @@ body {
 	font-family: 'Swiss721BT', 'Arial', 'Helvetica', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
 	background: #fff;
 }
 
@@ -230,4 +231,5 @@ a {
 @import "blog-page";
 @import "contact-page";
 @import "services-more-page";
+@import "articles-more-page";
 @import "media";
