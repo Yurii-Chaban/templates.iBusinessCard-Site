@@ -9,10 +9,10 @@
 				width: 100%;
 				height: 100%;
 				z-index: 1;
-				background: rgba(0, 0, 0, 0.4);
+				background: rgba(0, 0, 0, 0);
 			}
 
-			.fade {
+			.single-item {
 				position: absolute;
 				top: -150px;
 				z-index: 2;
@@ -31,12 +31,10 @@
 						.content-title {
 							margin: 0 0 29px;
 							color: white;
-							text-shadow: 0 0 6px black;
 							font: 400 34px / 36px $Swiss721BT;
 						}
 						.content-text {
 							color: white;
-							text-shadow: 0 0 5px rgba(0, 0, 0, 0.96);
 							font: 400 22px / 25px $Swiss721BT;
 						}
 					}
@@ -83,12 +81,19 @@
 				left: 14px;
 				padding-bottom: 17px;
 
+				&:hover {
+					.more-btn {
+						color: #000;
+					}
+				}
+
 				.more-btn {
 					position: relative;
 					left: 20px;
 					bottom: -10px;
 					color: white;
 					font: 400 18px / 22px $Swiss721BT;
+					@include transition;
 				}
 
 				.caption {
@@ -309,6 +314,7 @@
 				#select-services {
 					color: #ffa200;
 					padding-left: 10px;
+					background: #fff !important;
 				}
 			}
 
@@ -340,11 +346,14 @@
 
 					&:after {
 						position: absolute;
-						top: 10px;
-						right: 5px;
-						content: "";
-						width: 0;
+						top: 5px;
+						right: -5px;
+						content: "\f105";
+						font-family: "FontAwesome";
+						color: #ffa200;
+						width: 20px;
 						height: 100%;
+						font-size: 30px;
 						background: #fff;
 						z-index: 2;
 					}
@@ -502,8 +511,54 @@
 	.services-more-map {
 		height: 515px;
 	}
+	.blog-page {
+		.poster-section {
+			height: 800px;
+			.articles-block {
+				top: -280px;
+			}
+		}
+		.blog-page-map {
+			height: 515px;
+		}
+	}
 }
 @media (min-width: 1024px) {
+
+	#sticky-header {
+		z-index: 99999;
+	}
+	.sticking {
+		position: fixed !important;
+	}
+
+	// for animating home poster img
+	.poster-section .animate-img {
+		-webkit-animation: slow 20s linear;
+		-moz-animation: slow 20s linear;
+		-ms-animation: slow 20s linear;
+		animation: slow 20s linear;
+		height: 120%;
+	}
+	@keyframes slow {
+		0% {height: 100%;}
+		100% {height: 120%;}
+	}
+
+	@-moz-keyframes slow {
+		0% {height: 100%;}
+		100% {height: 120%;}
+	}
+
+	@-webkit-keyframes slow {
+		0% {height: 100%;}
+		100% {height: 120%;}
+	}
+
+	@-ms-keyframes slow {
+		0% {height: 100%;}
+		100% {height: 120%;}
+	}
 
 	.direction {
 		display: none;
@@ -609,6 +664,11 @@
 				color: black;
 				font: 400 16px / 25px $Swiss721BT;
 				background: url('../images/quote-btn-bg.png');
+				@include transition;
+
+				&:hover {
+					color: #fff;
+				}
 
 				span {
 					padding-left: 10px;
@@ -621,10 +681,11 @@
 				margin: 0 9px 0 0;
 				text-align: center;
 				color: #fff;
-				font: 400 16px/22px $Swiss721BT;
+				font: 700 16px/22px $Swiss721BT;
 
 				.fa {
 					padding-right: 10px;
+					font-weight: bold;
 				}
 			}
 		}
@@ -654,11 +715,11 @@
 		.poster-section {
 			height: 1043px;
 
-			.fade {
+			.single-item {
 				position: absolute;
 				top: -100px;
 				z-index: 2;
-				width: 910px;
+				width: 740px;
 				height: 100%;
 				left: 50%;
 				transform: translateX(-50%);
@@ -668,18 +729,16 @@
 					.position-content-block {
 						max-width: 525px;
 						width: 100%;
-						left: 170px;
+						left: 85px;
 						top: 15px;
 
 						.content-title {
 							margin: 0 0 29px;
 							color: white;
-							text-shadow: 0 0 6px black;
 							font: 400 42px / 47px $Swiss721BT;
 						}
 						.content-text {
 							color: white;
-							text-shadow: 0 0 5px rgba(0, 0, 0, 0.96);
 							font: 400 22px / 25px $Swiss721BT;
 						}
 					}
@@ -695,7 +754,7 @@
 					z-index: 999;
 				}
 				.next-btn {
-					right: 11px;
+					right: -74px;
 					background: url("../images/next.png") no-repeat;
 
 					&:hover {
@@ -703,7 +762,7 @@
 					}
 				}
 				.prev-btn {
-					left: 37px;
+					left: -48px;
 					background: url("../images/prev.png") no-repeat;
 
 					&:hover {
@@ -737,20 +796,21 @@
 				.caption {
 					position: absolute;
 					top: 0px;
-					left: 53px;
+					left: 115px;
 					width: 100%;
 					height: 100%;
 					color: #fff;
-					-webkit-transform: scaleX(0);
-					-moz-transform: scaleX(0);
-					-ms-transform: scaleX(0);
-					-o-transform: scaleX(0);
-					transform: scaleX(0);
-					-o-transform-origin: left center;
-					-moz-transform-origin: left center;
-					-ms-transform-origin: left center;
-					-webkit-transform-origin: left center;
-					transform-origin: left center;
+					display: none;
+					// -webkit-transform: scaleX(0);
+					// -moz-transform: scaleX(0);
+					// -ms-transform: scaleX(0);
+					// -o-transform: scaleX(0);
+					// transform: scaleX(0);
+					// -o-transform-origin: left center;
+					// -moz-transform-origin: left center;
+					// -ms-transform-origin: left center;
+					// -webkit-transform-origin: left center;
+					// transform-origin: left center;
 					-o-transition: all 0.4s linear 0s;
 					-moz-transition: all 0.4s linear 0s;
 					-webkit-transition: all 0.4s linear 0s;
@@ -770,11 +830,12 @@
 				}
 				&:hover {
 					.caption {
-						-webkit-transform: scaleX(1);
-						-moz-transform: scaleX(1);
-						-ms-transform: scaleX(1);
-						-o-transform: scaleX(1);
-						transform: scaleX(1);
+						display: block;
+						// -webkit-transform: scaleX(1);
+						// -moz-transform: scaleX(1);
+						// -ms-transform: scaleX(1);
+						// -o-transform: scaleX(1);
+						// transform: scaleX(1);
 					}
 				}
 			}
@@ -961,6 +1022,11 @@
 				width: 100%;
 				height: 100%;
 				background: rgba(0, 0, 0, 0.4);
+			}
+
+			.wrapper {
+				max-width: 994px;
+				padding: 0 15px 0 0;
 			}
 
 			.articles-block {
@@ -1202,75 +1268,15 @@
 						display: none;
 					}
 				}
-				// .icon-first {
-				// 	background: url("../images/1.png") no-repeat;
-				// 	@include transition;
-
-				// 	&:hover {
-				// 		background: url("../images/1_2.png") no-repeat;
-				// 	}
-				// }
-				// .icon-second {
-				// 	background: url("../images/2.png") no-repeat;
-				// 	@include transition;
-
-				// 	&:hover {
-				// 		background: url("../images/2_2.png") no-repeat;
-				// 	}
-				// }
-				// .icon-third {
-				// 	background: url("../images/3.png") no-repeat;
-				// 	@include transition;
-
-				// 	&:hover {
-				// 		background: url("../images/3_2.png") no-repeat;
-				// 	}
-				// }
-				// .icon-fourth {
-				// 	background: url("../images/4.png") no-repeat;
-				// 	@include transition;
-
-				// 	&:hover {
-				// 		background: url("../images/4_2.png") no-repeat;
-				// 	}
-				// }
-				// .icon-fifth {
-				// 	background: url("../images/5.png") no-repeat;
-				// 	@include transition;
-
-				// 	&:hover {
-				// 		background: url("../images/5_2.png") no-repeat;
-				// 	}
-				// }
-				// .icon-sixth {
-				// 	background: url("../images/6.png") no-repeat;
-				// 	@include transition;
-
-				// 	&:hover {
-				// 		background: url("../images/6_2.png") no-repeat;
-				// 	}
-				// }
 
 				&:hover {
-					// .icon-first {
-					// 	background: url("../images/1_2.png") no-repeat;
-					// }
-					// .icon-second {
-					// 	background: url("../images/2_2.png") no-repeat;
-					// }
-					// .icon-third {
-					// 	background: url("../images/3_2.png") no-repeat;
-					// }
-					// .icon-fourth {
-					// 	background: url("../images/4_2.png") no-repeat;
-					// }
-					// .icon-fifth {
-					// 	background: url("../images/5_2.png") no-repeat;
-					// }
-					// .icon-sixth {
-					// 	background: url("../images/6_2.png") no-repeat;
-					// }
 
+					.icon-wrapper {
+						img {
+							filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+							-webkit-filter: grayscale(0%);
+						}
+					}
 					.services-icon-title {
 						a {
 							color: #e17f00;
@@ -1310,7 +1316,7 @@
 			left: 0;
 			width: 100%;
 			height: 45px;
-			background: rgba(0, 0, 0, 0.6);
+			background: rgba(0, 0, 0, 0.3);
 		}
 		.top-rgba {
 			top: 0;
@@ -1333,6 +1339,8 @@
 			@include border-box;
 			margin: 150px auto 0;
 			text-align: center;
+			float: left;
+			margin-left: 80px;
 
 			li {
 				display: inline-block;
@@ -1503,24 +1511,29 @@
 			span {
 				display: block;
 				margin: 13px 0 0 20px;
-				color: white;
+				color: #000;
 				font: 400 20px / 22px $Swiss721BT;
 			}
 		}
 		.form-wrapper {
 			.selection-block {
-				label{
+				label {
+					margin: 0;
+					position: relative;
+
 					&:after {
 						position: absolute;
-						top: 0;
-						right: 0;
-						content: "";
-						width: 30px;
+						top: 3px;
+						right: -5px;
+						content: "\f105";
+						font-family: "FontAwesome";
+						color: #ffa200;
+						width: 20px;
 						height: 100%;
+						font-size: 30px;
 						background: #fff;
-						border: none;
 						z-index: 2;
-
+						border: none;
 					}
 				}
 			}
@@ -1586,7 +1599,7 @@
 			left: 0;
 			bottom: 0;
 			width: 100%;
-			background: rgba(0, 0, 0, 0.6);
+			background: rgba(0, 0, 0, 0.7);
 			z-index: 1;
 
 			.footer-main-menu,
@@ -1598,9 +1611,21 @@
 				width: 100%;
 
 				.block-title {
+					position: relative;
 					margin: 0 0 12px;
+					padding-bottom: 7px;
 					color: white;
 					font: 400 20px / 22px $Swiss721BT;
+
+					&:before {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						content: "";
+						width: 60px;
+						height: 3px;
+						background-color: #ff9001;
+					}
 				}
 			}
 			.footer-main-menu {
@@ -1704,6 +1729,13 @@
 
 					.fa {
 						padding-right: 7px;
+					}
+				}
+
+				.block-title {
+					&:before {
+						right: 45px;
+						left: auto;
 					}
 				}
 			}
@@ -1926,11 +1958,14 @@
 
 						&:after {
 							position: absolute;
-							top: 0;
-							right: 0;
-							content: "";
+							top: 5px;
+							right: -5px;
+							content: "\f105";
+							font-family: "FontAwesome";
+							color: #ffa200;
 							width: 20px;
 							height: 100%;
+							font-size: 30px;
 							background: #fff;
 							z-index: 2;
 						}
@@ -2376,7 +2411,9 @@
 	.why-section-more-services,
 	.blog-tegs-more-services,
 	.why-section-more-articles,
-	.blog-tegs-more-articles {
+	.blog-tegs-more-articles,
+	.why-section-blog-page,
+	.blog-tegs-blog-page {
 		display: none;
 	}
 }

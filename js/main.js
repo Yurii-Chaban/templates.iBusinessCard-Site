@@ -94,15 +94,10 @@ prevArrow: '<img class="next-btn" src="images/more-next.png" alt="more next">',
 
 // TEXT SLIDER ON MAIN PAGE
 $(document).ready(function() {
-    $('.fade').slick({
-      dots: false,
+    $('.single-item').slick({
       infinite: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
       speed: 500,
-      fade: true,
       centerPadding: '10px',
-      cssEase: 'linear',
       nextArrow: '<div class="next-btn"></div>',
       prevArrow: '<div class="prev-btn"></div>'
   });
@@ -118,10 +113,24 @@ $(document).ready(function(){
             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
             if ($target.length) {
         var targetOffset = $target.offset().top - ($("#quote-block").outerHeight(true)- 590); //#main-header - заменить на ваш элемент
-        $('html,body').animate({scrollTop: targetOffset}, 1000);
+        $('html,body').animate({scrollTop: targetOffset}, 3000);
         return false;
     }
 }
 });
+    });
+});
+
+// light box
+$(document).ready(function() {
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+  })
+});
+// slick navigation
+$(document).ready(function() {
+    $(function(){
+        $('#sticky-header').stickMe();
     });
 });

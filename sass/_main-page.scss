@@ -3,7 +3,7 @@
 		clear: both;
 		.poster-section {
 
-			.fade {
+			.single-item {
 				position: absolute;
 				top: -100px;
 				z-index: 2;
@@ -24,7 +24,6 @@
 						.content-title {
 							margin: 0;
 							color: white;
-							text-shadow: 0 0 6px black;
 							font: 400 17px / 23px $Swiss721BT;
 
 							span {
@@ -33,7 +32,6 @@
 						}
 						.content-text {
 							color: white;
-							text-shadow: 0 0 5px rgba(0, 0, 0, 0.96);
 							font: 400 12px / 22px $Swiss721BT;
 						}
 					}
@@ -152,6 +150,7 @@
 
 				p {
 					max-width: 865px;
+					text-align: justify;
 					font: 400 12px / 14px $Swiss721BT;
 				}
 			}
@@ -376,7 +375,7 @@
 			left: 0;
 			width: 100%;
 			height: 45px;
-			background: rgba(0, 0, 0, 0.6);
+			background: rgba(0, 0, 0, 0.3);
 		}
 		.top-rgba {
 			top: 0;
@@ -523,7 +522,7 @@
 			span {
 				display: block;
 				margin: 0 0 0 10px;
-				color: white;
+				color: #000;
 				font: 400 17px / 22px $Swiss721BT;
 			}
 		}

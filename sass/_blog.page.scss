@@ -1,6 +1,6 @@
 .blog-page {
 	.poster-section {
-		height: 1035px;
+		height: 1200px;
 		.under-rgba-layer {
 			position: absolute;
 			z-index: 1;
@@ -13,15 +13,15 @@
 
 		.wrapper {
 			padding: 0;
+			width: 100%;
 			max-width: 100%;
-
 		}
 
 		.articles-block {
 			position: absolute;
 			z-index: 1;
-			top: -440px;
-			margin: 0;
+			top: -520px;
+			margin: 28px 0 0 0;
 
 			.section-main-title {
 				text-align: left;
@@ -37,9 +37,10 @@
 				text-align: center;
 				li {
 					display: block;
+					max-height: 213px;
 					width: 100%;
-					height: auto;
-					margin: 10px auto;
+					height: 100%;
+					margin: 6px auto 22px;
 					background: rgba(0, 0, 0, 0.6);
 					overflow: hidden;
 					text-align: left;
@@ -49,15 +50,46 @@
 
 
 					.img-wrapper {
-						display: none;
+						float: left;
+						width: 488px;
+						height: 213px;
+
+						overflow: hidden;
+						position: relative;
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-box-pack: center;
+						-ms-flex-pack: center;
+						-webkit-justify-content: center;
+						justify-content: center;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						-webkit-align-items: center;
+						align-items: center;
+
+						img {
+							min-height: auto;
+							height: 100%;
+							min-width: auto;
+							max-width: none;
+							width: auto;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							-webkit-transform: translate(-50%, -50%);
+							-ms-transform: translate(-50%, -50%);
+							transform: translate(-50%, -50%);
+						}
 					}
 
 					.owerflow-block {
 						overflow: hidden;
-						padding: 9px 18px 11px 14px;
+						padding: 9px 7px 13px 16px;
 
 						.article-title {
-							margin: 0 0 5px;
+							margin: 0 0 20px;
 							text-shadow: 0 4px 5px rgba(0, 0, 0, 0.24);
 							color: white;
 							font: 400 25px / 27px $Swiss721BT;
@@ -86,21 +118,19 @@
 
 		.pagination-block {
 			width: 100%;
-			height: 76px;
+			height: 83px;
 			background: rgba(0, 0, 0, 0.6);
 			position: absolute;
 			left: 0;
 			bottom: 0;
 			z-index: 2;
-			overflow: hidden;
 
 			.pagination-list {
+				float: right;
 				width: auto;
-				margin: 18px auto 0;
+				margin: 35px 0 0 0;
+				padding-left: 15px;
 			}
 		}
-	}
-	.blog-page-map {
-		height: 651px;
 	}
 }
