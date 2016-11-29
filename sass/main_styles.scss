@@ -1,5 +1,16 @@
 @import "compass/reset";
 
+@font-face {
+	font-family: 'Icon';
+	src: url('../stylesheets/themes/default/assets/fonts/icons.eot') format('eot');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.otf') format('otf');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.svg') format('svg');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.ttf') format('ttf');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.woff') format('woff');
+	src: url('../stylesheets/themes/default/assets/fonts/icons.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: 'Swiss721BT';

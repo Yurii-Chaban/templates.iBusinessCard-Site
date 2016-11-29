@@ -62,8 +62,10 @@ $(function () {
 // FOR SLIDER MORE 
 $(document).ready(function() {
     $('.center').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
@@ -86,8 +88,8 @@ $(document).ready(function() {
     }
 }
 ],
-nextArrow: '<img class="prev-btn" src="images/more-prev.png" alt="more prev">',
-prevArrow: '<img class="next-btn" src="images/more-next.png" alt="more next">',
+nextArrow: '<img class="next-btn" src="images/more-next.png" alt="more prev">',
+prevArrow: '<img class="prev-btn" src="images/more-prev.png" alt="more next">',
 });
 });
 
@@ -95,12 +97,14 @@ prevArrow: '<img class="next-btn" src="images/more-next.png" alt="more next">',
 // TEXT SLIDER ON MAIN PAGE
 $(document).ready(function() {
     $('.single-item').slick({
-      infinite: true,
-      speed: 500,
-      centerPadding: '10px',
-      nextArrow: '<div class="next-btn"></div>',
-      prevArrow: '<div class="prev-btn"></div>'
-  });
+     autoplay: true,
+     autoplaySpeed: 5000,
+     infinite: true,
+     speed: 1000,
+     centerPadding: '10px',
+     nextArrow: '<div class="next-btn"></div>',
+     prevArrow: '<div class="prev-btn"></div>'
+ });
 });
 
 // for go to block for id
@@ -133,4 +137,28 @@ $(document).ready(function() {
     $(function(){
         $('#sticky-header').stickMe();
     });
+});
+$(document).ready(function() {
+    $('.ui.dropdown')
+    .dropdown();
+});
+
+// FIND DROPDOVN AND ADD CLASS ANGLE DOWN IN SELECT CITY BLOCK
+$(document).ready(function($) {
+    $("#select-services").find(".icon").addClass('angle down');
+});
+
+// scroll to map section and hide header
+var fixmeTop = $('#quote-block').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('#sticky-header').css({
+            'z-index' : '-100',
+        });
+    } else {
+        $('#sticky-header').css({
+            'z-index' : '999999'
+        });
+    }
 });

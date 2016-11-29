@@ -17,7 +17,8 @@
             position = 0,
             $elem = this,
             $elemHeight = $elem.innerHeight(),
-            $win_center = $window.height() / 2,
+            // $win_center = $window.height() / 2, //default value
+            $win_center = $window.height() / 1000, // i use this value = 1000 for fix from top = only header height
             $pos,
             settings = $.extend({
                 transitionDuration: 300,

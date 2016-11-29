@@ -12,10 +12,11 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<!--- Component CSS -->
-	<link rel="stylesheet" href="stylesheets/swiper.min.css">
 	<link rel="stylesheet" href="stylesheets/slick.css">
 	<link rel="stylesheet" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/lightbox/lightbox.css">
+	<link rel="stylesheet" href="stylesheets/semantic.min.css">
+	<link rel="stylesheet" href="stylesheets/dropdown.min.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 
 </head>
@@ -140,7 +141,7 @@
 				</div>
 				<div class="more-block">
 					<div class="caption">
-					<marquee direction="right">
+						<marquee direction="right">
 							<p>Replace this text <span>with updates on the building page</span></p>
 						</marquee>
 					</div>
@@ -327,14 +328,15 @@
 							</div>
 							<div class="row selection-block">
 								<span class="services-label">Service</span>
-								<label>
-									<select id="select-services" name="services item">
-										<option value="">Choose</option>
-										<option value="services-1">Services-1</option>
-										<option value="services-2">Services-2</option>
-										<option value="services-3">Services-3</option>
-									</select>
-								</label>
+								<div id="select-services" class="ui compact selection dropdown">
+									<i class="dropdown icon"></i>
+									<div class="text">Choose</div>
+									<div class="menu">
+										<div class="item">Services-1</div>
+										<div class="item">Services-2</div>
+										<div class="item">Services-3</div>
+									</div>
+								</div>
 							</div>
 							<div class="row message">
 								<label for="message">Message</label>
@@ -560,6 +562,8 @@
 		<script src="js/slick.min.js"></script>
 		<script src="js/lightbox/lightbox.js"></script>
 		<script src="js/sticky-header.js"></script>
+		<script src="js/semantic.min.js"></script>
+		<script src="js/dropdown.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 	</html>
