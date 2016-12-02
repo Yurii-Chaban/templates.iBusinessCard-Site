@@ -18,7 +18,7 @@
             $elem = this,
             $elemHeight = $elem.innerHeight(),
             // $win_center = $window.height() / 2, //default value
-            $win_center = $window.height() / 1000, // i use this value = 1000 for fix from top = only header height
+            // $win_center = $window.height() / 1000, // i use this value = 1000 for fix from top = only header height
             $pos,
             settings = $.extend({
                 transitionDuration: 300,
@@ -26,7 +26,7 @@
                 shadowOpacity: 0.3,
                 animate: true,
                 triggerAtCenter: true,
-                topOffset: $elemHeight,
+                topOffset: 0,
                 transitionStyle: 'fade',
                 stickyAlready: false
             }, options);

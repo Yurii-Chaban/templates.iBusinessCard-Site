@@ -46,6 +46,17 @@ $(function () {
         }
     });
 });
+// for footer-main-menu-list
+$(function () {
+    $('.footer-main-menu-list li a').each(function () {
+        var location = window.location.pathname;
+        var link = this.pathname;
+        var result = location.match(link);
+        if(result && link.length > 0) {
+            $(this).addClass('footer-main-menu-list-active');
+        }
+    });
+});
 
 // for services menu
 $(function () {
@@ -162,3 +173,16 @@ $(window).scroll(function() {
         });
     }
 });
+
+// $(document).ready(function() {
+
+//     $(".more-block").hover(function(){
+//         $(this).addClass("animate-to");
+//         $(this).removeClass("animate-back");
+//     },
+//     function () {
+//         $(this).addClass("animate-back");
+//         $(this).removeClass("animate-to");
+//     });
+
+// });

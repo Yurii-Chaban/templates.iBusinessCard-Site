@@ -164,6 +164,10 @@
 					font: 400 12px / 14px $Swiss721BT;
 				}
 
+				input {
+					border-radius: 0;
+				}
+
 				#first-name,
 				#number,
 				#email, 
@@ -202,6 +206,42 @@
 				#select-services {
 					color: #ffa200;
 					padding-left: 10px;
+				}
+				.ui.selection.dropdown {
+					cursor: pointer;
+					word-wrap: break-word;
+					line-height: 1em;
+					white-space: normal;
+					outline: 0;
+					-webkit-transform: rotateZ(0);
+					transform: rotateZ(0);
+					min-width: 14em;
+					min-height: 30px;
+					background: #FFF;
+					display: inline-block;
+					padding: 9px 2.1em .78571429em 1em;
+					color: rgba(0,0,0,.87);
+					box-shadow: none;
+					border: 1px solid rgba(34,36,38,.15);
+					border-radius: 0;
+					-webkit-transition: box-shadow .1s ease,width .1s ease;
+					transition: box-shadow .1s ease,width .1s ease;
+				}
+				.ui.selection.dropdown>.dropdown.icon {
+					padding: 14px .78571429em .78571429em;
+				}
+				.ui.selection.dropdown .menu>.item {
+					color: #ffa200;
+					font: 400 14px/19px $Swiss721BT;
+				}
+				.ui.dropdown .menu .selected.item {
+					color: rgba(255,162,0, 0.9);
+				}
+				.ui.selection.visible.dropdown>.text:not(.default) {
+					color: #ffa200;
+				}
+				.ui.selection.dropdown .menu {
+					max-height: 135px;
 				}
 			}
 
